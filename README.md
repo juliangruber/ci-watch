@@ -23,6 +23,11 @@ Usage: ci-watch [DIRECTORY]
 - [Travis](https://travis-ci.org/)
 - [AppVeyor](https://www.appveyor.com/)
 
+Todo:
+
+- [CircleCI](https://circleci.com/home/) ([#1](https://github.com/juliangruber/ci-watch/issues/1))
+- [Jenkins](https://jenkins.io/) ([#2](https://github.com/juliangruber/ci-watch/issues/2))
+
 For more, please [open an issue](https://github.com/juliangruber/ci-watch/issues/new).
 
 ## JavaScript API
