@@ -1,7 +1,9 @@
 
 # ci-watch
 
-Stream live CI results to your terminal! Exits with the proper exit code too!
+Stream live CI results from multiple environments to your terminal! Exits with the proper exit code too!
+
+Currently supports Travis and AppVeyor, so it covers macOS, Linux and Windows.
 
 ![screenshot](screenshot.png)
 
