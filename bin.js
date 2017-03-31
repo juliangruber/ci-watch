@@ -31,14 +31,14 @@ try {
 }
 
 const update = () => {
-	diff.reset()
-	diff.write(render(watch.state()))
+  diff.reset()
+  diff.write(render(watch.state()))
 }
 
 const watch = new Watch(dir)
 watch.start()
 watch.on('finish', () => {
-	update()
+  update()
   process.exit(!watch.state.success)
 })
 

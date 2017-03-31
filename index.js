@@ -30,7 +30,8 @@ Watch.prototype.state = function () {
     return val
   }
 
-  const all = key => Object.keys(this._ci).map(name => deep(this._ci[name].state, key))
+  const all = key =>
+    Object.keys(this._ci).map(name => deep(this._ci[name].state, key))
 
   return {
     started: this.started,
@@ -44,16 +45,18 @@ Watch.prototype.state = function () {
     build: one('build') && {
       number: all('build?.number').filter(Boolean).join('/')
     },
-    results: all('results').reduce((acc, results) => {
-      Object.keys(results).forEach(os => {
-        acc[os] = results[os]
-      })
-      return acc
-    }, {}),
-    success: all('success').reduce((acc, success) =>
-      typeof acc === 'boolean' && !acc
-        ? acc
-        : success)
+    results: all('results').reduce(
+      (acc, results) => {
+        Object.keys(results).forEach(os => {
+          acc[os] = results[os]
+        })
+        return acc
+      },
+      {}
+    ),
+    success: all('success').reduce(
+      (acc, success) => typeof acc === 'boolean' && !acc ? acc : success
+    )
   }
 }
 
