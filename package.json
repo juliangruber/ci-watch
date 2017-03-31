@@ -1,0 +1,24 @@
+{
+  "name": "ci-watch",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "juliangruber/ci-watch",
+  "description": "Stream live CI results to your terminal!",
+  "scripts": {
+    "test": "prettier-standard-formatter *.js && standard"
+  },
+  "bin": {
+    "ci-watch": "bin.js"
+  },
+  "devDependencies": {
+    "prettier-standard-formatter": "^0.222222222222222.333333333333333",
+    "standard": "^9.0.2"
+  },
+  "dependencies": {
+    "ansi-diff-stream": "^1.2.0",
+    "appveyor-watch": "^1.0.2",
+    "deep-access": "^0.1.1",
+    "render-ci-matrix": "^2.0.0",
+    "travis-watch": "^1.16.2"
+  }
+}
