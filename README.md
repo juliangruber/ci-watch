@@ -36,8 +36,8 @@ const diff = differ()
 diff.pipe(process.stdout)
 
 const update = () => {
-	diff.reset()
-	diff.write(render(watch.state()))
+  diff.reset()
+  diff.write(render(watch.state()))
 }
 
 const watch = new Watch(process.cwd())
