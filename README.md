@@ -35,11 +35,6 @@ const Watch = require('ci-watch')
 const diff = differ()
 diff.pipe(process.stdout)
 
-const update = () => {
-  diff.reset()
-  diff.write(render(watch.state()))
-}
-
 const watch = new Watch(process.cwd())
 watch.start()
 watch.on('finish', () => {
