@@ -39,7 +39,7 @@ const watch = new Watch(dir)
 watch.start()
 watch.on('finish', () => {
   update()
-  process.exit(!watch.state.success)
+  process.exit(!watch.state().success)
 })
 
 setInterval(update, 100)
