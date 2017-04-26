@@ -1,6 +1,6 @@
 {
   "name": "ci-watch",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "repository": "juliangruber/ci-watch",
   "description": "Stream live CI results to your terminal!",
